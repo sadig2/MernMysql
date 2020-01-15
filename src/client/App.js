@@ -42,22 +42,16 @@ export default class App extends Component {
                 username:'Fake user'
             }
         };
-        this.state((prevState)=>({
-            post:[newPost, ...prevState.posts],
+        this.setState((prevState)=>({
+            posts:[newPost, ...prevState.posts],
             postContent:''
-        }))
+        }));
     }
 
   render() {
 
 
-   
-
     const { posts, postContent } = this.state;
-
-   
-
-   
 
 return (
   <div className="container">
